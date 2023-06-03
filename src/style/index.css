@@ -1,0 +1,161 @@
+@import "./base.css";
+
+
+body {
+    background-color: #f1f2f3;
+}
+
+/* -------------------------------*/
+/* Banner                         */
+/* -------------------------------*/
+
+.banner { 
+    min-height: 100vh;
+    width: 100%;
+    background: #fff url("../img/banner.avif") center center / cover no-repeat;
+}
+
+.overlay {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(20 24 28 / 0.5);
+}
+
+
+section.overlay , section.banner {
+    min-height: calc(100vh - 56px);
+    display: grid;
+    place-items: center;
+}
+
+section.overlay div {
+    text-align: center;
+}
+
+section.overlay div p {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 600;
+}
+section.overlay h2 + p {
+    margin-top: 40px;
+}
+
+
+section.overlay h2 {
+    font-size: 45px;
+    font-weight: 700;
+    color: #f1f2f3;
+    text-transform: capitalize;
+}
+
+
+.primaryButton {
+    width: 200px;
+    height: 60px;
+    background-color: var(--app-dark-bg);
+    color: #fff;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+
+}
+.primaryButton:hover {
+    width: 200px;
+    height: 60px;
+    background-color: transparent;
+    color: var(--app-dark-bg);
+    border: 2px solid var(--app-dark-bg);
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.secondaryButton {
+    width: 200px;
+    height: 60px;
+    background-color: transparent;
+    color: var(--app-dark-bg);
+    border: 2px solid var(--app-dark-bg);
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.secondaryButton:hover {
+    width: 200px;
+    height: 60px;
+    background-color: var(--app-dark-bg);
+    color: #fff;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.buttons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* -------------------------------*/
+/* Gallery                        */
+/* -------------------------------*/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 30px;
+
+}
+
+.img {
+    height: 300px;
+    width: 100%;
+    border-radius: 6px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.img-box {
+    transition: all 0.25s ease-in-out;
+}
+
+.img-box:hover {
+    translate: 0px -10px;
+}
+
+.course-info {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.course-info:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.gallery-section {
+    margin: 80px 0;
+}
+
+
+.course-heading {
+    font-weight: 700;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.heading {
+    padding: 40px;
+}
+
+.section-heading {
+    margin: 80px 0;
+    background-color: #fff;
+}
+
